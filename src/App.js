@@ -16,7 +16,7 @@ class App extends Component {
         <div className = 'container'>
 
           <div className = 'top'>
-            <h2 className = 'top-text'>Top Text Here</h2>
+            <h2 className = 'top-text'>Top Text Here Top Text Here Top Text Here</h2>
           </div>
 
           <div className = 'bottom'>

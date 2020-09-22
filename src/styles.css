@@ -29,6 +29,7 @@ body {
 
 
 .title {
+   font-size:60px;
    margin: 0px auto 50px;
    text-align: center;
    width:100%;
@@ -36,9 +37,11 @@ body {
 
 .container {
    background-color: lightblue;
+   border-radius: 5px;
    margin: auto;
+   padding: 5px;
    height: 33%;
-   width: 66%;
+   width: 100%;
 }
 
 .top {
@@ -47,7 +50,7 @@ body {
 }
 
 .top-text {
-
+   font-size:36px;
 }
 
 .bottom {
@@ -63,7 +66,8 @@ body {
 
 .choice {
    background-color: red;
-   border-radius: 100px;
+   border-radius: 5px;
+   font-size:20px;
    text-align:center;
    padding: 10px 20px;
    width:40%;
