@@ -5,7 +5,7 @@
 }
 
 html{
-
+   font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -43,6 +43,8 @@ body {
 
 .top {
    background-color: lightseagreen;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
    height:150px;
    text-align: center;
    display: flex;
@@ -75,6 +77,8 @@ body {
 
 .progress {
    background-color: lightslategray;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
    padding: 5px;
    font-size:24px;
    text-align: center;
@@ -117,8 +121,8 @@ body {
    }
 
    .progress {
-      height: 40px;
-      padding: 10px 0;
+      height: auto;
+      padding: 10px;
    }
 
 }
