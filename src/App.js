@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import styles from './styles.css'
+// Styles
+import styles from './styles.css';
+// Questions data
+import questions from './data';
 
 class App extends Component {
   constructor(props){
