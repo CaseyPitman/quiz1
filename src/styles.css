@@ -23,10 +23,8 @@ body {
 
 .App {
    margin: auto;
-   height:33%;
-   width:66%;
+   width:100%;
 }
-
 
 .title {
    font-size:60px;
@@ -39,14 +37,17 @@ body {
    background-color: lightblue;
    border-radius: 5px;
    margin: auto;
-   padding: 5px;
-   height: 33%;
-   width: 100%;
+   height: auto;
+   width: 600px;
 }
 
 .top {
    background-color: lightseagreen;
+   height:150px;
    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .top-text {
@@ -60,8 +61,7 @@ body {
    align-items:center;
    align-content: space-around;
    flex-flow: row wrap;
-   height: 200px;
-   
+   height: 250px;
 }
 
 .choice {
@@ -75,5 +75,50 @@ body {
 
 .progress {
    background-color: lightslategray;
+   padding: 5px;
+   font-size:24px;
    text-align: center;
+}
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 767px){
+   body{
+      background-color: seagreen;
+   }
+
+   .container{
+      width: 90%;
+      height: auto;
+   }
+
+   .title {
+      font-size:48px;
+      margin: 0px auto 50px;
+      text-align: center;
+      width:100%;
+   }
+
+   .top-text{
+      font-size: 25px;
+   }
+
+   .bottom {
+      background-color: lightgoldenrodyellow;
+      display: flex;
+      justify-content: space-around;
+      align-items:center;
+      align-content: space-around;
+      flex-flow: column nowrap;
+      height: 400px;
+   }
+
+   .choice {
+      width: 90%;
+   }
+
+   .progress {
+      height: 40px;
+      padding: 10px 0;
+   }
+
 }

@@ -12,11 +12,11 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <h1 className = 'title'>Quiz App</h1>
+    
         <div className = 'container'>
 
           <div className = 'top'>
-            <h2 className = 'top-text'>Top Text Here Top Text Here Top Text Here</h2>
+            <h2 className = 'top-text'>Do you have what it takes to ace the legendary pop culture quiz?</h2>
           </div>
 
           <div className = 'bottom'>
