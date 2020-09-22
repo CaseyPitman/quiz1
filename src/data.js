@@ -5,286 +5,286 @@ const questions = [
 
    {
       id: 0,
-      question: '',
+      question: 'In what year did William the Conquerer begin the Norman Conquest of Great Britain?',
       answerChoices: [
          {
             id: '0a',
-            choice: '',
+            choice: '1863 AD',
             isCorrect: false
          },
          {
             id: '0b',
-            choice: '',
+            choice: '1066 AD',
             isCorrect: true
          },
          {
             id: '0c',
-            choice: '',
+            choice: '1776 AD',
             isCorrect: false
          },
          {
             id: '0d',
-            choice: '',
+            choice: '44 BC',
             isCorrect: false
          }
       ]
    },
    {
       id: 1,
-      question: '',
+      question: 'What landmark science fiction novel by Frank Herbert was credited as a major influence on the Star Wars films?',
       answerChoices: [
          {
             id: '1a',
-            choice: '',
+            choice: 'Foundation',
             isCorrect: false
          },
          {
             id: '1b',
-            choice: '',
+            choice: 'Dune',
             isCorrect: true
          },
          {
             id: '1c',
-            choice: '',
+            choice: 'Stranger in a Strange Land',
             isCorrect: false
          },
          {
             id: '1d',
-            choice: '',
+            choice: 'Childhood\'s End',
             isCorrect: false
          }
       ]
    },
    {
       id: 2,
-      question: '',
+      question: 'After Julius Caesar\'s murder by members of the Senate, who succeeded him as the ruler of Rome?',
       answerChoices: [
          {
             id: '2a',
-            choice: '',
+            choice: 'Julia',
             isCorrect: false
          },
          {
             id: '2b',
-            choice: '',
+            choice: 'Caesarion',
             isCorrect: false
          },
          {
             id: '2c',
-            choice: '',
+            choice: 'Octavian',
             isCorrect: true
          },
          {
             id: '2d',
-            choice: '',
+            choice: 'Gaius',
             isCorrect: false
          }
       ]
    },
    {
       id: 3,
-      question: '',
+      question: 'What 1988 debut album by the Pixies featured the songs "Gigantic" and "Where Is My Mind?"',
       answerChoices: [
          {
             id: '3a',
-            choice: '',
+            choice: 'Doolittle',
             isCorrect: false
          },
          {
             id: '3b',
-            choice: '',
+            choice: 'Trompe le Monde',
             isCorrect: false
          },
          {
             id: '3c',
-            choice: '',
+            choice: 'Bossanova',
             isCorrect: false
          },
          {
             id: '3d',
-            choice: '',
+            choice: 'Surfer Rosa',
             isCorrect: true
          }
       ]
    },
    {
       id: 4,
-      question: '',
+      question: 'Which of these colleges is not a member of the Ivy Leageue?',
       answerChoices: [
          {
             id: '4a',
-            choice: '',
+            choice: 'Providence College',
             isCorrect: true
          },
          {
             id: '4b',
-            choice: '',
+            choice: 'University of Pennsylvania',
             isCorrect: false
          },
          {
             id: '4c',
-            choice: '',
+            choice: 'Princeton',
             isCorrect: false
          },
          {
             id: '4d',
-            choice: '',
+            choice: 'Yale',
             isCorrect: false
          }
       ]
    },
    {
       id: 5,
-      question: '',
+      question: 'At which of these fictional schools did Peter Parker attend high school?',
       answerChoices: [
          {
             id: '5a',
-            choice: '',
+            choice: 'Coal Hill School',
             isCorrect: false
          },
          {
             id: '5b',
-            choice: '',
+            choice: 'Rydell High School',
             isCorrect: false
          },
          {
             id: '5c',
-            choice: '',
+            choice: 'Midtown High School',
             isCorrect: true
          },
          {
             id: '5d',
-            choice: '',
+            choice: 'Ditko High School',
             isCorrect: false
          }
       ]
    },
    {
       id: 6,
-      question: '',
+      question: 'Which of these women has not served as Secretary of State?',
       answerChoices: [
          {
             id: '6a',
-            choice: '',
+            choice: 'Hillary Clinton',
             isCorrect: false
          },
          {
             id: '6b',
-            choice: '',
+            choice: 'Janet Reno',
             isCorrect: true
          },
          {
             id: '6c',
-            choice: '',
+            choice: 'Condoleeza Rice',
             isCorrect: false
          },
          {
             id: '6d',
-            choice: '',
+            choice: 'Madeleine Albright',
             isCorrect: false
          }
       ]
    },
    {
       id: 7,
-      question: '',
+      question: 'During most of his NBA career, Michael Jordan wore the number 23. What other number did he briefly wear?',
       answerChoices: [
          {
             id: '7a',
-            choice: '',
+            choice: '45',
             isCorrect: true
          },
          {
             id: '7b',
-            choice: '',
+            choice: '11',
             isCorrect: false
          },
          {
             id: '7c',
-            choice: '',
+            choice: '32',
             isCorrect: false
          },
          {
             id: '7d',
-            choice: '',
+            choice: '42',
             isCorrect: false
          }
       ]
    },
    {
       id: 8,
-      question: '',
+      question: 'Who assasinated Archduke Franz Ferdinand of Austria, setting in motion the events leading to World War I?',
       answerChoices: [
          {
             id: '8a',
-            choice: '',
+            choice: 'Sirhan Sirhan',
             isCorrect: false
          },
          {
             id: '8b',
-            choice: '',
+            choice: 'Nathuram Godse',
             isCorrect: false
          },
          {
             id: '8c',
-            choice: '',
+            choice: 'Leon Czolgosz',
             isCorrect: false
          },
          {
             id: '8d',
-            choice: '',
+            choice: 'Gavrilo Princip',
             isCorrect: true
          }
       ]
    },
    {
       id: 10,
-      question: '',
+      question: 'The Marvel character Matt Murdock (Daredevil) was abandoned by his mother as an infant. He encountered her years later in her capacity as a what?',
       answerChoices: [
          {
             id: '10a',
-            choice: '',
+            choice: 'Social worker',
             isCorrect: false
          },
          {
             id: '10b',
-            choice: '',
+            choice: 'Nun',
             isCorrect: true
          },
          {
             id: '10c',
-            choice: '',
+            choice: 'Police officer',
             isCorrect: false
          },
          {
             id: '10d',
-            choice: '',
+            choice: 'Lawyer',
             isCorrect: false
          }
       ]
    },
    {
       id: 10,
-      question: '',
+      question: 'The books "The Talisman" and "Black House" follow the adventures of Jack Sawyer. What author did Stephen King collaborate with on both novels?',
       answerChoices: [
          {
             id: '10a',
-            choice: '',
+            choice: 'Peter Straub',
             isCorrect: true
          },
          {
             id: '10b',
-            choice: '',
+            choice: 'Joe Lansdale',
             isCorrect: false
          },
          {
             id: '10c',
-            choice: '',
+            choice: 'Richard Chizmar',
             isCorrect: false
          },
          {
             id: '10d',
-            choice: '',
+            choice: 'Joe Hill',
             isCorrect: false
          }
       ]
