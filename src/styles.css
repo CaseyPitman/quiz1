@@ -106,6 +106,15 @@ body {
    font-size:30px;
 }
 
+.score {
+   text-align: center;
+   width: 100%;
+}
+
+.score-text {
+   margin: 0 auto 40px;
+}
+
 /* MOBILE STYLES */
 @media only screen and (max-width: 767px){
 
