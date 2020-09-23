@@ -3,11 +3,22 @@ import React, {Component} from 'react';
 import styles from './styles.css';
 // Questions data
 import questions from './data';
+// Components
+import QuestionArea from './questionArea';
+import Progress from './progress';
+
+const initialState = {
+  currentQuestion: "Do you have what it takes to ace the legendary general knowledge quiz?",
+  questionCount: 0,
+  inProgress: false
+}
+
 
 class App extends Component {
   constructor(props){
     super()
 
+    this.state = initialState;
   }
 
 
@@ -17,20 +28,20 @@ class App extends Component {
     
         <div className = 'container'>
 
-          <div className = 'top'>
-            <h2 className = 'top-text'>Do you have what it takes to ace the legendary pop culture quiz?</h2>
+           <QuestionArea 
+            curQuestion = {this.state.currentQuestion}/>
+
+          <div className = 'answer-area'>
+            <button className = 'choice'>Choice One</button>
+            <button className = 'choice'>Choice Two</button>
+            <button className = 'choice'>Choice Three</button>
+            <button className = 'choice'>Choice Four</button>
           </div>
 
-          <div className = 'bottom'>
-            <button className = 'choice'><h3>Choice One</h3></button>
-            <button className = 'choice'><h3>Choice Two</h3></button>
-            <button className = 'choice'><h3>Choice Three</h3></button>
-            <button className = 'choice'><h3>Choice Four</h3></button>
-          </div>
-
-          <div className = 'progress'>
-            <h4>Question 1 of 20</h4>
-          </div>
+        <Progress 
+          inProgress = {this.state.inProgress}
+          questionCount = {this.state.questionCount}
+          />
 
         </div>
       </div>
