@@ -238,26 +238,26 @@ const questions = [
       ]
    },
    {
-      id: 10,
+      id: 9,
       question: 'The Marvel character Matt Murdock (Daredevil) was abandoned by his mother as an infant. He encountered her years later in her capacity as a what?',
       answerChoices: [
          {
-            id: '10a',
+            id: '9a',
             choice: 'Social worker',
             isCorrect: false
          },
          {
-            id: '10b',
+            id: '9b',
             choice: 'Nun',
             isCorrect: true
          },
          {
-            id: '10c',
+            id: '9c',
             choice: 'Police officer',
             isCorrect: false
          },
          {
-            id: '10d',
+            id: '9d',
             choice: 'Lawyer',
             isCorrect: false
          }
@@ -291,234 +291,234 @@ const questions = [
    },
    {
       id: 11,
-      question: '',
+      question: 'What author wrote the travel memoir Travels with Charley: In Search of America? ',
       answerChoices: [
          {
             id: '11a',
-            choice: '',
+            choice: 'Jack Kerouac',
             isCorrect: false
          },
          {
             id: '11b',
-            choice: '',
+            choice: 'John Steinbeck',
             isCorrect: true
          },
          {
             id: '11c',
-            choice: '',
+            choice: 'Ernest Hemingway',
             isCorrect: false
          },
          {
             id: '11d',
-            choice: '',
+            choice: 'Mark Twain',
             isCorrect: false
          }
       ]
    },
    {
-      id: 113,
-      question: '',
+      id: 12,
+      question: 'The Victorian British novelist Mary Ann Evans wrote under what male pen name?',
       answerChoices: [
          {
-            id: '113a',
-            choice: '',
+            id: '12a',
+            choice: 'George Eliot',
             isCorrect: true
          },
          {
-            id: '113b',
-            choice: '',
+            id: '12b',
+            choice: 'George Sand',
             isCorrect: false
          },
          {
-            id: '113c',
-            choice: '',
+            id: '12c',
+            choice: 'Michael Field',
             isCorrect: false
          },
          {
-            id: '113d',
-            choice: '',
+            id: '12d',
+            choice: 'Magnus Flyte',
             isCorrect: false
          }
       ]
    },
    {
       id: 13,
-      question: '',
+      question: 'BBC journalist and The Guardian columnist Ben Hammersley is credited with coining what modern tech term?',
       answerChoices: [
          {
             id: '13a',
-            choice: '',
+            choice: 'Selfie',
             isCorrect: false
          },
          {
             id: '13b',
-            choice: '',
+            choice: 'Podcast',
             isCorrect: true
          },
          {
             id: '13c',
-            choice: '',
+            choice: 'Streaming',
             isCorrect: false
          },
          {
             id: '13d',
-            choice: '',
+            choice: 'Emoji',
             isCorrect: false
          }
       ]
    },
    {
-      id: 115,
-      question: '',
+      id: 14,
+      question: 'There are currently how many elements listed on the Periodic Table of Elements?',
       answerChoices: [
          {
-            id: '115a',
-            choice: '',
+            id: '14a',
+            choice: '108',
             isCorrect: false
          },
          {
-            id: '115b',
-            choice: '',
+            id: '14b',
+            choice: '115',
             isCorrect: false
          },
          {
-            id: '115c',
-            choice: '',
+            id: '14c',
+            choice: '118',
             isCorrect: true
          },
          {
-            id: '115d',
-            choice: '',
+            id: '14d',
+            choice: '92',
             isCorrect: false
          }
       ]
    },
    {
       id: 15,
-      question: '',
+      question: 'What modernist poet was known for poems such as "The Waste Lands" and "The Hollow Men"?',
       answerChoices: [
          {
             id: '15a',
-            choice: '',
+            choice: 'Ezra Pound',
             isCorrect: false
          },
          {
             id: '15b',
-            choice: '',
+            choice: 'T.S. Eliot',
             isCorrect: true
          },
          {
             id: '15c',
-            choice: '',
+            choice: 'William Carlos Williams',
             isCorrect: false
          },
          {
             id: '15d',
-            choice: '',
+            choice: 'Carl Sandburg',
             isCorrect: false
          }
       ]
    },
    {
-      id: 117,
-      question: '',
+      id: 16,
+      question: 'Lew Alcindor is a legendary athlete better known by what name?',
       answerChoices: [
          {
-            id: '117a',
-            choice: '',
+            id: '16a',
+            choice: 'Kareem Abdul-Jabbar',
             isCorrect: true
          },
          {
-            id: '117b',
-            choice: '',
+            id: '16b',
+            choice: 'Muhammad Ali',
             isCorrect: false
          },
          {
-            id: '117c',
-            choice: '',
+            id: '16c',
+            choice: 'Metta World Peace',
             isCorrect: false
          },
          {
-            id: '117d',
-            choice: '',
+            id: '16d',
+            choice: 'Sugar Ray Robinson',
             isCorrect: false
          }
       ]
    },
    {
       id: 17,
-      question: '',
+      question: 'Who is credited with the invention of the World Wide Web?',
       answerChoices: [
          {
             id: '17a',
-            choice: '',
+            choice: 'Al Gore',
             isCorrect: false
          },
          {
             id: '17b',
-            choice: '',
+            choice: 'Alan Turing',
             isCorrect: false
          },
          {
             id: '17c',
-            choice: '',
+            choice: 'Steve Wozniak',
             isCorrect: false
          },
          {
             id: '17d',
-            choice: '',
+            choice: 'Tim Berners-Lee',
             isCorrect: true
          }
       ]
    },
    {
       id: 18,
-      question: '',
+      question: 'Who was credited with killing Billy the Kid?',
       answerChoices: [
          {
             id: '18a',
-            choice: '',
+            choice: 'William H. Bonney',
             isCorrect: false
          },
          {
             id: '18b',
-            choice: '',
+            choice: 'Pat Garrett',
             isCorrect: true
          },
          {
             id: '18c',
-            choice: '',
+            choice: 'Henry McCarty',
             isCorrect: false
          },
          {
             id: '18d',
-            choice: '',
+            choice: 'Ollie P. Roberts',
             isCorrect: false
          }
       ]
    },
    {
       id: 19,
-      question: '',
+      question: 'Jonas Salk is known for developing the first vaccine for what virus?',
       answerChoices: [
          {
             id: '19a',
-            choice: '',
+            choice: 'Smallpox',
             isCorrect: false
          },
          {
             id: '19b',
-            choice: '',
+            choice: 'Flu',
             isCorrect: false
          },
          {
             id: '19c',
-            choice: '',
+            choice: 'Measles',
             isCorrect: false
          },
          {
             id: '19d',
-            choice: '',
+            choice: 'Polio',
             isCorrect: true
          }
       ]

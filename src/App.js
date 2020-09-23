@@ -11,7 +11,6 @@ class App extends Component {
   }
 
 
-
   render(){
     return (
       <div className="App">
@@ -23,10 +22,10 @@ class App extends Component {
           </div>
 
           <div className = 'bottom'>
-            <div className = 'choice'><h3>Choice One</h3></div>
-            <div className = 'choice'><h3>Choice Two</h3></div>
-            <div className = 'choice'><h3>Choice Three</h3></div>
-            <div className = 'choice'><h3>Choice Four</h3></div>
+            <button className = 'choice'><h3>Choice One</h3></button>
+            <button className = 'choice'><h3>Choice Two</h3></button>
+            <button className = 'choice'><h3>Choice Three</h3></button>
+            <button className = 'choice'><h3>Choice Four</h3></button>
           </div>
 
           <div className = 'progress'>

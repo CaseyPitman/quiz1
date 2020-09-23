@@ -6,10 +6,11 @@
 
 html{
    font-family: 'Lato', sans-serif;
+   color: rgb(255, 255, 255);
 }
 
 body {
-   background-color: lightcoral;
+   background-color:rgb(34, 47, 62);
    display: flex;
    justify-content: center;
    align-items:center;
@@ -34,7 +35,8 @@ body {
 }
 
 .container {
-   background-color: lightblue;
+   background-color: rgb(87, 101, 116);
+   border: 1px solid white;
    border-radius: 5px;
    margin: auto;
    height: auto;
@@ -42,7 +44,7 @@ body {
 }
 
 .top {
-   background-color: lightseagreen;
+   
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    height:150px;
@@ -57,7 +59,6 @@ body {
 }
 
 .bottom {
-   background-color: lightgoldenrodyellow;
    display: flex;
    justify-content: space-around;
    align-items:center;
@@ -67,16 +68,23 @@ body {
 }
 
 .choice {
-   background-color: red;
+   background-color: transparent;
+   border:1px solid rgb(200, 214, 229);
    border-radius: 5px;
+   color:rgb(255, 255, 255);
    font-size:20px;
    text-align:center;
    padding: 10px 20px;
-   width:40%;
+   width:45%;
+}
+
+.choice:hover {
+   cursor: pointer;
+   background-color: rgb(34, 47, 62);
 }
 
 .progress {
-   background-color: lightslategray;
+
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
    padding: 5px;
@@ -86,9 +94,7 @@ body {
 
 /* MOBILE STYLES */
 @media only screen and (max-width: 767px){
-   body{
-      background-color: seagreen;
-   }
+
 
    .container{
       width: 90%;
@@ -107,7 +113,6 @@ body {
    }
 
    .bottom {
-      background-color: lightgoldenrodyellow;
       display: flex;
       justify-content: space-around;
       align-items:center;
@@ -117,7 +122,7 @@ body {
    }
 
    .choice {
-      width: 90%;
+      width: 75%;
    }
 
    .progress {
