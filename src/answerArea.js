@@ -15,7 +15,7 @@ let AnswerArea = (props) => {
    let content;
    if (props.quizStage === 'intro'){
       //The game has yet to begin. Display start button.
-      content = <StartButton/>;
+      content = <StartButton clickStart = {props.clickStart}/>;
    } else if (props.quizStage === 'playing'){
       // The game has begun. Display answer choices.
       content = <Choices />

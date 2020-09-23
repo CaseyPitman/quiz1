@@ -6,13 +6,15 @@ import questions from './data';
 // Components
 import QuestionArea from './questionArea';
 import Progress from './progress';
-import AnswerArea from './answerArea'
+import AnswerArea from './answerArea';
+
+import shuffle from './shuffle';
 
 const initialState = {
-  currentQuestion: "Do you have what it takes to ace the legendary general knowledge quiz?",
+  questionSet: [],
   questionCount: 0,
   inProgress: false,
-  quizStage: 'end',  //Or 'playing' or 'end'
+  quizStage: 'intro',  //'intro', 'playing' or 'end'
   score: 0
 }
 
@@ -24,6 +26,23 @@ class App extends Component {
     this.state = initialState;
   }
 
+  //User clicks start button
+  clickStart = () => {
+    console.log('start button clicked');
+
+    let shuffledQuestions = shuffle(questions);
+    //Shuffle questions
+
+    console.log(shuffledQuestions);
+
+    this.setState({
+      questionSet: shuffledQuestions,
+      inProgress: true,
+      quizStage: 'playing'
+    })
+  }
+
+
 
   render(){
     return (
@@ -32,17 +51,15 @@ class App extends Component {
         <div className = 'container'>
 
            <QuestionArea 
-            curQuestion = {this.state.currentQuestion}/>
-
-          {/* <div className = 'answer-area'>
-            <button className = 'choice'>Choice One</button>
-            <button className = 'choice'>Choice Two</button>
-            <button className = 'choice'>Choice Three</button>
-            <button className = 'choice'>Choice Four</button>
-          </div> */}
+            quizStage = {this.state.quizStage}
+            currentQuestion = {this.state.questionSet[this.state.questionCount]}
+            questionCount = {this.state.questionCount}/>
 
           <AnswerArea
             quizStage = {this.state.quizStage}
+            questionCount = {this.state.questionCount}
+            clickStart = {this.clickStart}
+            questionSet = {this.questionSet}
           
           />
 

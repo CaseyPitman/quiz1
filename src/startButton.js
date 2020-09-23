@@ -2,13 +2,19 @@
 
 import React from 'react'
 
-let StartButton = () => {
+let StartButton = (props) => {
 
    //Click handler for start button.
+   let clickHandler = () => {
+      props.clickStart();
+   }
    
 
    return(
-      <button className = 'choice'>Start</button>
+      <button 
+      className = 'choice'
+      onClick = {clickHandler}
+      >Start</button>
    )
 }
 

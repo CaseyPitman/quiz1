@@ -55,7 +55,7 @@ body {
 }
 
 .question {
-   font-size:36px;
+   font-size:28px;
    font-weight: 300;
    padding-left: 10px;
    padding-right: 10px;
@@ -84,7 +84,8 @@ body {
    width:45%;
 }
 
-.choice:hover {
+.choice:hover,
+.choice:focus {
    cursor: pointer;
    background-color: rgb(34, 47, 62);
    font-weight: 400;
@@ -132,7 +133,7 @@ body {
    }
 
    .question{
-      font-size: 25px;
+      font-size: 20px;
    }
 
    .answer-area {

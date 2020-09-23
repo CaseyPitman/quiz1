@@ -4,9 +4,9 @@ import React from 'react';
 
 let Progress = (props) => {
 
+   //Progress monitor not showing until quiz starts.
    let style = '';
    if (!props.inProgress){
-      // console.log('not in progress');
       style = 'none';
    } else {
       style = 'block';
@@ -20,7 +20,7 @@ let Progress = (props) => {
       <div className = 'progress'>
          <h4 
          className = 'progress-text'
-         style = {textStyle} >Question {props.questionCount} of 20</h4>
+         style = {textStyle} >Question {props.questionCount + 1} of 20</h4>
       </div>
    )
 }
