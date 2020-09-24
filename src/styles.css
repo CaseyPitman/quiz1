@@ -72,7 +72,7 @@ body {
 }
 
 .choice {
-   background-color: transparent;
+   background-color: rgb(34, 47, 62, 0.5);
    border:1px solid rgb(200, 214, 229);
    border-radius: 5px;
    color:rgb(255, 255, 255);

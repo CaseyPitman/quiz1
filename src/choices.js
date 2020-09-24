@@ -2,11 +2,22 @@
 
 import React from 'react';
 
-let Choices  = () => {
+let Choices  = (props) => {
+
+   //Handles click on an answer
+   let clickHandler = (event) => {
+      console.log(`answer ${event.target.id} has been clicked`);
+      //Pass id 
+   }
 
 
    return (
-      <button className = 'choice'>Choice One</button>
+      <button 
+         className = 'choice' 
+         id = {props.id} 
+         onClick = {clickHandler}>
+            {props.choice}
+         </button>
    )
 }
 

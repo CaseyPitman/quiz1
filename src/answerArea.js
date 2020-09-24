@@ -10,9 +10,14 @@ import Score from './score'
 
 let AnswerArea = (props) => {
 
-   
-   console.log(props.choices);
 
+   let renderChoice = (choice) => {
+      console.log('choice here', choice);
+      return <Choices 
+               choice = {choice.choice}
+               key = {choice.id}
+               id = {choice.id} />
+   }
 
    //Method to call for content for this area
    let content;
@@ -21,7 +26,7 @@ let AnswerArea = (props) => {
       content = <StartButton clickStart = {props.clickStart}/>;
    } else if (props.quizStage === 'playing'){
       // The game has begun. Display answer choices.
-      content = <Choices />
+      content = props.choices.map(renderChoice);
    } else {
       // Game is over. Show the final score.
       content = <Score />
