@@ -12,11 +12,13 @@ let AnswerArea = (props) => {
 
 
    let renderChoice = (choice) => {
-      console.log('choice here', choice);
+      // console.log('choice here', choice.isCorrect);
       return <Choices 
                choice = {choice.choice}
                key = {choice.id}
-               id = {choice.id} />
+               id = {choice.id} 
+               isCorrect = {choice.isCorrect}
+               nextQuestion = {props.nextQuestion}/>
    }
 
    //Method to call for content for this area

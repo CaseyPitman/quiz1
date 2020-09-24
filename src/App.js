@@ -69,6 +69,37 @@ class App extends Component {
     })
   }
 
+  //Function to add to score if correct and  advance the quiz.
+
+  nextQuestion = (answer) => {
+
+
+    let score = this.state.score;
+    let count = this.state.questionCount + 1;
+    let stage = 'playing'
+    //Answer is correct, add to score.
+    if (answer){
+      score ++;
+    }
+
+    //User has finished the quiz
+    if (count === 20){
+      //Shows score
+      stage = 'end';
+      count --;
+    }
+    
+
+    //Update score, question count
+    this.setState({
+      score: score,
+      questionCount: count,
+      quizStage: stage
+    })
+    
+
+  }
+
 
 
 
@@ -90,6 +121,7 @@ class App extends Component {
             questionCount = {this.state.questionCount}
             clickStart = {this.clickStart}
             choices = {this.state.questionSet[this.state.questionCount].answerChoices}
+            nextQuestion = {this.nextQuestion}
 
           />
 

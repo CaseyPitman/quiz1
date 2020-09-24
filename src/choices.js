@@ -6,8 +6,12 @@ let Choices  = (props) => {
 
    //Handles click on an answer
    let clickHandler = (event) => {
-      console.log(`answer ${event.target.id} has been clicked`);
-      //Pass id 
+
+      //Pass boolean
+
+      props.nextQuestion(props.isCorrect)
+
+      
    }
 
 

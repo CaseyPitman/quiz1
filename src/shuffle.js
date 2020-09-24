@@ -11,7 +11,35 @@ let shuffle = (array) =>{
       array[j] = temp;
    }
 
+   //Dummy question at the end will ensure proper end of game
+   let dummy = {
+      id: 0,
+      question: '',
+      answerChoices: [
+         {
+            id: '',
+            choice: '',
+            isCorrect: false
+         },
+         {
+            id: '',
+            choice: '',
+            isCorrect: true
+         },
+         {
+            id: '',
+            choice: '',
+            isCorrect: false
+         },
+         {
+            id: '',
+            choice: '',
+            isCorrect: false
+         }
+      ]
+   }
 
+   // array = array.push(dummy);
    return array;
 }
 
