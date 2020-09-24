@@ -96,10 +96,15 @@ class App extends Component {
       questionCount: count,
       quizStage: stage
     })
-    
-
+  
   }
 
+  reset = () => {
+    console.log('click')
+    this.setState({
+      ...this.state = initialState
+    })
+  }
 
 
 
@@ -122,6 +127,8 @@ class App extends Component {
             clickStart = {this.clickStart}
             choices = {this.state.questionSet[this.state.questionCount].answerChoices}
             nextQuestion = {this.nextQuestion}
+            score = {this.state.score}
+            reset = {this.reset}
 
           />
 

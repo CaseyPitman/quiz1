@@ -31,7 +31,7 @@ let AnswerArea = (props) => {
       content = props.choices.map(renderChoice);
    } else {
       // Game is over. Show the final score.
-      content = <Score />
+      content = <Score score = {props.score} reset = {props.reset}/>
 
    }
 

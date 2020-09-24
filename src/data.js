@@ -109,7 +109,7 @@ const questions = [
    },
    {
       id: 4,
-      question: 'Which of these colleges is not a member of the Ivy Leageue?',
+      question: 'Which of these colleges is not a member of the Ivy League?',
       answerChoices: [
          {
             id: '4a',
