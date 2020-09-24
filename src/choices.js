@@ -10,7 +10,6 @@ let Choices  = (props) => {
       //Pass boolean
 
       props.nextQuestion(props.isCorrect)
-
       
    }
 

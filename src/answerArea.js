@@ -5,7 +5,8 @@ import React from 'react';
 //Content for this component contextually rendered dependent on stage of game.
 import StartButton from './startButton'
 import Choices from './choices';
-import Score from './score'
+import Score from './score';
+import shuffle from './shuffle'
 
 
 let AnswerArea = (props) => {
@@ -13,6 +14,7 @@ let AnswerArea = (props) => {
 
    let renderChoice = (choice) => {
       // console.log('choice here', choice.isCorrect);
+
       return <Choices 
                choice = {choice.choice}
                key = {choice.id}
@@ -28,7 +30,10 @@ let AnswerArea = (props) => {
       content = <StartButton clickStart = {props.clickStart}/>;
    } else if (props.quizStage === 'playing'){
       // The game has begun. Display answer choices.
-      content = props.choices.map(renderChoice);
+      //Shuffle the answer choices
+      let shuffledChoices = shuffle(props.choices);
+      //Render the choices
+      content = shuffledChoices.map(renderChoice);
    } else {
       // Game is over. Show the final score.
       content = <Score score = {props.score} reset = {props.reset}/>
