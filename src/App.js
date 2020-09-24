@@ -11,7 +11,34 @@ import AnswerArea from './answerArea';
 import shuffle from './shuffle';
 
 const initialState = {
-  questionSet: [],
+  questionSet: [
+
+    {
+       id: 0,
+       question: '',
+       answerChoices: [
+          {
+             id: '',
+             choice: '',
+             isCorrect: false
+          },
+          {
+             id: '',
+             choice: '',
+             isCorrect: true
+          },
+          {
+             id: '',
+             choice: '',
+             isCorrect: false
+          },
+          {
+             id: '',
+             choice: '',
+             isCorrect: false
+          }
+       ]
+    }],
   questionCount: 0,
   inProgress: false,
   quizStage: 'intro',  //'intro', 'playing' or 'end'
@@ -33,7 +60,7 @@ class App extends Component {
     let shuffledQuestions = shuffle(questions);
     //Shuffle questions
 
-    console.log(shuffledQuestions);
+    // console.log(shuffledQuestions);
 
     this.setState({
       questionSet: shuffledQuestions,
@@ -44,7 +71,10 @@ class App extends Component {
 
 
 
+
+
   render(){
+
     return (
       <div className="App">
     
@@ -59,8 +89,8 @@ class App extends Component {
             quizStage = {this.state.quizStage}
             questionCount = {this.state.questionCount}
             clickStart = {this.clickStart}
-            questionSet = {this.questionSet}
-          
+            choices = {this.state.questionSet[this.state.questionCount].answerChoices}
+
           />
 
           <Progress 

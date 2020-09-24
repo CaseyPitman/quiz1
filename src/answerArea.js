@@ -10,6 +10,9 @@ import Score from './score'
 
 let AnswerArea = (props) => {
 
+   
+   console.log(props.choices);
+
 
    //Method to call for content for this area
    let content;
