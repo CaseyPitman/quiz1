@@ -98,10 +98,6 @@ class App extends Component {
     })
   }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> experiment
   render(){
 
     return (
