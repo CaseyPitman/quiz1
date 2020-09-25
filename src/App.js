@@ -45,7 +45,6 @@ const initialState = {
   score: 0
 }
 
-
 class App extends Component {
   constructor(props){
     super()
@@ -60,8 +59,6 @@ class App extends Component {
     let shuffledQuestions = shuffle(questions);
     //Shuffle questions
 
-    // console.log(shuffledQuestions);
-
     this.setState({
       questionSet: shuffledQuestions,
       inProgress: true,
@@ -69,10 +66,8 @@ class App extends Component {
     })
   }
 
-  //Function to add to score if correct and  advance the quiz.
-
+  //Function to add to score if correct and advance the quiz.
   nextQuestion = (answer) => {
-
 
     let score = this.state.score;
     let count = this.state.questionCount + 1;
@@ -107,8 +102,6 @@ class App extends Component {
   }
 
 
-
-
   render(){
 
     return (
@@ -116,10 +109,11 @@ class App extends Component {
     
         <div className = 'container'>
 
-           <QuestionArea 
+          <QuestionArea 
             quizStage = {this.state.quizStage}
             currentQuestion = {this.state.questionSet[this.state.questionCount]}
-            questionCount = {this.state.questionCount}/>
+            questionCount = {this.state.questionCount}
+          />
 
           <AnswerArea
             quizStage = {this.state.quizStage}
@@ -129,7 +123,6 @@ class App extends Component {
             nextQuestion = {this.nextQuestion}
             score = {this.state.score}
             reset = {this.reset}
-
           />
 
           <Progress 

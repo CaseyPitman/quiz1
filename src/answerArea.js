@@ -11,9 +11,7 @@ import shuffle from './shuffle'
 
 let AnswerArea = (props) => {
 
-
    let renderChoice = (choice) => {
-      // console.log('choice here', choice.isCorrect);
 
       return <Choices 
                choice = {choice.choice}
