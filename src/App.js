@@ -55,7 +55,6 @@ class App extends Component {
 
   //User clicks start button
   clickStart = () => {
-    console.log('start button clicked');
 
     let shuffledQuestions = shuffle(questions);
     //Shuffle questions
@@ -73,7 +72,6 @@ class App extends Component {
 
   nextQuestion = (answer) => {
 
-
     let score = this.state.score;
     let count = this.state.questionCount + 1;
     let stage = 'playing'
@@ -89,13 +87,11 @@ class App extends Component {
       count --;
     }
     
-
-    //Update score, question count
-    this.setState({
-      score: score,
-      questionCount: count,
-      quizStage: stage
-    })
+      this.setState({  
+        score: score,
+        questionCount: count,
+        quizStage: stage
+      })
   
   }
 
@@ -105,9 +101,6 @@ class App extends Component {
       ...this.state = initialState
     })
   }
-
-
-
 
   render(){
 
