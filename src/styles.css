@@ -39,7 +39,7 @@ body {
 .container {
    background-color: rgb(87, 101, 116);
    border: 1px solid white;
-   border-radius: 5px;
+  
    height: auto;
    margin: auto;
    width: 600px;
@@ -47,8 +47,6 @@ body {
 
 .question-area {
    border-bottom:1px solid white;
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
    height:200px;
 
    display: flex;
@@ -66,7 +64,7 @@ body {
 
 .answer-area{
    border-bottom: 1px solid white;
-   height: 250px;
+   height: 275px;
 
    display: flex;
    justify-content: space-around;
@@ -79,7 +77,6 @@ body {
 .correct, 
 .incorrect {
    border:1px solid rgb(200, 214, 229);
-   border-radius: 5px;
    color:rgb(255, 255, 255);
    font-family: 'Lato', sans-serif;
    font-size:20px;
@@ -108,11 +105,10 @@ body {
    background-color: rgb(34, 47, 62);
    cursor: pointer;
    font-weight: 400;
+
 }
 
 .progress {
-   border-bottom-left-radius: 5px;
-   border-bottom-right-radius: 5px;
    height: 90px;
   
    display: flex;
@@ -147,12 +143,9 @@ body {
 }
 
 .score {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-flow: row wrap;
 
    height: 100%;
+   margin: 30px auto 0;
    text-align: center;
    width: 100%;
 }
@@ -166,6 +159,8 @@ body {
 .burn {
    font-size: 30px;
    font-weight:300;
+   margin: 50px auto;
+   text-align: center;
    width:90%;
 }
 
@@ -207,8 +202,8 @@ body {
 
    .choice:hover,
    .choice:focus {
-   background-color: rgb(34, 47, 62, 0.5);
-   cursor: pointer;
-   font-weight: 300;
-}
+      background-color: rgb(34, 47, 62, 0.5);
+      cursor: pointer;
+      font-weight: 300;
+   }
 }
