@@ -1,20 +1,24 @@
-//This module renders the current question
+//This module renders the current question being asked. 
 
 import React from 'react';
 
 
-
-
-
 let QuestionArea = (props) => {
 
+   //Declare question
    let currentQuestion = ''
+   //Determines type of content based on stage in quiz.
 
+   //Intro stage, quiz has not begun.
    if (props.quizStage === 'intro'){
       currentQuestion = 'Do you have what it takes to ace the legendary general knowledge quiz?';
-   } else if (props.quizStage === 'playing'){
+   }
+   // Quiz is actively being played. 
+   else if (props.quizStage === 'playing'){
       currentQuestion = props.currentQuestion.question;
-   } else if (props.quizStage === 'end'){
+   } 
+   // Quiz has ended. 
+   else if (props.quizStage === 'end'){
       currentQuestion = 'Congratulations. You finished. ';
    }
 

@@ -1,4 +1,4 @@
-//This module renders the progress monitor at the bottom of the quiz component
+//This module renders the progress monitor at the bottom of the quiz component.
 
 import React from 'react';
 
@@ -19,8 +19,11 @@ let Progress = (props) => {
       visibility: style
    }
 
+   //Renders the dynamic progress bar. 
    let renderProgressBar = (id) => {
+      //Default class name, sets size and width of bar pieces. 
       let className = 'progress-bar';
+      //Sets pieces of the bar to new color as quiz advances. 
       if (id < props.questionCount || props.quizStage === 'end' ){
          className += ' answered';
       } 
@@ -35,23 +38,16 @@ let Progress = (props) => {
                style = {style}/>
    }
 
+   //Updates the progress bar
    let progressBar = [];
    for (let i = 0; i < 20; i++){
       progressBar.push(renderProgressBar(i));
    }
 
-
    return (          
       <div className = 'progress' style = {textStyle}>
-         <h4 
-         className = 'progress-text'
-         style = {textStyle} >Question {props.questionCount + 1} of 20</h4>
-
+         <h4 className = 'progress-text' style = {textStyle} >Question {props.questionCount + 1} of 20</h4>
          {progressBar}
-
-{/* 
-         <div className = 'progress-bar' style = {textStyle}></div> */}
-
       </div>
    )
 }

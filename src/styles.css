@@ -5,15 +5,17 @@
 }
 
 html{
-   font-family: 'Lato', sans-serif;
    color: rgb(255, 255, 255);
+   font-family: 'Lato', sans-serif;
 }
 
 body {
    background-color:rgb(34, 47, 62);
+
    display: flex;
    justify-content: center;
    align-items:center;
+
    width:100%;
    height: 100vh;
 }
@@ -38,18 +40,19 @@ body {
    background-color: rgb(87, 101, 116);
    border: 1px solid white;
    border-radius: 5px;
-   margin: auto;
    height: auto;
+   margin: auto;
    width: 600px;
 }
 
 .question-area {
+   border-bottom:1px solid white;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
-   border-bottom:1px solid white;;
    height:200px;
-   text-align: center;
+
    display: flex;
+   text-align: center;
    justify-content: center;
    align-items: center;
 }
@@ -59,17 +62,17 @@ body {
    font-weight: 300;
    padding-left: 10px;
    padding-right: 10px;
-   
 }
 
 .answer-area{
    border-bottom: 1px solid white;
+   height: 250px;
+
    display: flex;
    justify-content: space-around;
    align-items:center;
    align-content: space-around;
    flex-flow: row wrap;
-   height: 250px;
 }
 
 .choice, 
@@ -81,8 +84,8 @@ body {
    font-family: 'Lato', sans-serif;
    font-size:20px;
    font-weight: 300;
-   text-align:center;
    padding: 10px 20px;
+   text-align:center;
    width:48%;
 }
 
@@ -102,8 +105,8 @@ body {
 
 .choice:hover,
 .choice:focus {
-   cursor: pointer;
    background-color: rgb(34, 47, 62);
+   cursor: pointer;
    font-weight: 400;
 }
 
@@ -119,8 +122,8 @@ body {
 }
 
 .progress-text{
-   margin-top: 10px;
    font-size:30px;
+   margin-top: 10px;
    text-align: center;
    width: 100%;
 }
@@ -128,11 +131,11 @@ body {
 .progress-bar,
 .answerd,
 .not-answered {
+   align-self:end;
    background-color: rgb(255, 255, 255, .70);
-   width: 5%;
    height:20px;
    margin-top: auto;
-   align-self:end;
+   width: 5%;
 }
 
 .answered{
@@ -147,14 +150,12 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-
    flex-flow: row wrap;
-   text-align: center;
+
    height: 100%;
+   text-align: center;
    width: 100%;
 }
-
-
 
 .score-text {
    font-size:40px;
@@ -163,9 +164,9 @@ body {
 }
 
 .burn {
-   width:100%;
    font-size: 30px;
    font-weight:300;
+   width:90%;
 }
 
 /* MOBILE STYLES */
@@ -173,8 +174,8 @@ body {
 
 
    .container{
-      width: 90%;
       height: auto;
+      width: 90%;
    }
 
    .title {
@@ -189,12 +190,13 @@ body {
    }
 
    .answer-area {
+      height: 400px;
+
       display: flex;
       justify-content: space-around;
       align-items:center;
       align-content: space-around;
       flex-flow: column nowrap;
-      height: 400px;
    }
 
    .choice,
@@ -202,6 +204,4 @@ body {
    .incorrect {
       width: 85%;
    }
-
-
 }

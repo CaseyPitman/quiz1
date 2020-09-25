@@ -4,22 +4,25 @@ import React from 'react';
 
 let Choices  = (props) => {
 
-   let className = 'choice'
+   //Set default class name for answer choices (unselected)
+   let className = 'choice';
 
 
    //Handles click on an answer
    let clickHandler = (event) => {
-      console.log(props);
 
+      //Answer is correct - it will turn green. 
       if (props.isCorrect){
-         event.target.className = 'correct'
-      } else {
-         event.target.className = 'incorrect'
+         event.target.className = 'correct';
+      } 
+      // Answer is incorrect - it will turn red. 
+      else {
+         event.target.className = 'incorrect';
       }
-      //Pass boolean
-      setTimeout(() => props.nextQuestion(props.isCorrect), 1000);
-      // props.nextQuestion(props.isCorrect)
       
+      //Call to advance the game is briefly delayed to allow user to see if their answer 
+      //was correct or incorrect. 
+      setTimeout(() => props.nextQuestion(props.isCorrect), 1000);
    }
 
 

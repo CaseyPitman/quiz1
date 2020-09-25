@@ -1,7 +1,9 @@
+//Fairly difficult general knowledge quiz.
+
 import React, {Component} from 'react';
 // Styles
 import styles from './styles.css';
-// Questions data
+// Questions and answers data
 import questions from './data';
 // Components
 import QuestionArea from './questionArea';
@@ -10,6 +12,7 @@ import AnswerArea from './answerArea';
 
 import shuffle from './shuffle';
 
+//Default beginning state
 const initialState = {
   questionSet: [
 
@@ -58,6 +61,7 @@ class App extends Component {
     let shuffledQuestions = shuffle(questions);
     //Shuffle questions
 
+    //Set the question order for the quiz.
     this.setState({
       questionSet: shuffledQuestions,
       inProgress: true,
@@ -65,9 +69,10 @@ class App extends Component {
     })
   }
 
-  //Function to add to score if correct and advance the quiz.
+  //Function to add to score if correct and advance the quiz regardless of correctness of answer.
   nextQuestion = (answer) => {
 
+    //Add to score
     let score = this.state.score;
     let count = this.state.questionCount + 1;
     let stage = 'playing'
@@ -78,21 +83,21 @@ class App extends Component {
 
     //User has finished the quiz
     if (count === 20){
-      //Shows score
+      //Shows final score
       stage = 'end';
       count --;
     }
     
-      this.setState({  
-        score: score,
-        questionCount: count,
-        quizStage: stage
-      })
-  
+    this.setState({  
+      score: score,
+      questionCount: count,
+      quizStage: stage
+    })
   }
 
+  //The quiz has ended. User clicks to try again. 
   reset = () => {
-    console.log('click')
+    //Reset to initial state.
     this.setState({
       ...this.state = initialState
     })

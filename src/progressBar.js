@@ -4,15 +4,9 @@
 import React from 'react';
 
 
-
 let ProgressBar = (props) => {
 
-   
-
-
-
    return (
-
       <div className = {props.className} id = {props.id}></div>
    )
 }

@@ -291,7 +291,7 @@ const questions = [
    },
    {
       id: 11,
-      question: 'What author wrote the travel memoir Travels with Charley: In Search of America? ',
+      question: 'What author wrote the travel memoir "Travels with Charley: In Search of America?" ',
       answerChoices: [
          {
             id: '11a',

@@ -11,8 +11,8 @@ import shuffle from './shuffle'
 
 let AnswerArea = (props) => {
 
+   //Render answer choices
    let renderChoice = (choice) => {
-
       return <Choices 
                choice = {choice.choice}
                key = {choice.id}
@@ -21,7 +21,7 @@ let AnswerArea = (props) => {
                nextQuestion = {props.nextQuestion}/>
    }
 
-   //Method to call for content for this area
+   //Determines content to be displayed depening on stage of the quiz.
    let content;
    if (props.quizStage === 'intro'){
       //The game has yet to begin. Display start button.
@@ -35,14 +35,12 @@ let AnswerArea = (props) => {
    } else {
       // Game is over. Show the final score.
       content = <Score score = {props.score} reset = {props.reset}/>
-
    }
 
    return(
 
       <div className = 'answer-area'>
          {content}
-         {/* <button className = 'choice'>Choice One</button> */}
       </div>
    )
 
