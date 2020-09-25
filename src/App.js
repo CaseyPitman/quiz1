@@ -128,6 +128,7 @@ class App extends Component {
           <Progress 
             inProgress = {this.state.inProgress}
             questionCount = {this.state.questionCount}
+            quizStage = {this.state.quizStage}
           />
 
         </div>

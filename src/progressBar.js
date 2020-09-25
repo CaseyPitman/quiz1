@@ -7,11 +7,13 @@ import React from 'react';
 
 let ProgressBar = (props) => {
 
-   let className = 'progress-bar'
+   
+
+
 
    return (
 
-      <div className = {className}></div>
+      <div className = {props.className} id = {props.id}></div>
    )
 }
 
